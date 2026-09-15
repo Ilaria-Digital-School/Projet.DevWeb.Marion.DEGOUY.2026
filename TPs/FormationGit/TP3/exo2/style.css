@@ -1,0 +1,155 @@
+
+/*navbar*/
+header {
+    background-color: rgb(223, 130, 130);
+}
+#md {
+    text-align: left;
+    background-color: rgb(213, 213, 213);
+    border-radius: 5px;
+    font-family: sans-serif;
+    text-shadow: 3px 3px 5px rgb(44, 40, 40);
+    margin: 10px;
+    padding: 10px;
+}
+a {
+    text-align: right;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+}
+a:hover {
+    text-decoration: underline;
+    color: orangered;
+}
+
+/*button*/
+button{
+    border-radius: 5px;
+    background-color:rgb(131, 10, 10);
+    padding: 5px;
+    color: whitesmoke;
+}
+button:hover{
+    color: yellow;
+}
+
+/*body*/
+body {
+    background-color: black;
+    background-image: url("./images/arriere-plan-motif-elegant-style-damasc_1048-11129.avif");
+}
+em {
+    color: rgb(67, 67, 67);
+}
+img {
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: rgb(67, 67, 67);
+    width: 500px;
+    padding: 5px;
+    margin: 10px;
+}
+.img1 {
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: rgb(67, 67, 67);
+    width: 200px;
+    padding: 5px;
+    margin: 10px;
+}
+.container {
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+#textpage{
+    background-color: rgb(213, 213, 213);
+    border-radius: 10px;
+    border: 2px solid rgb(131, 10, 10);
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 6px 6px 30px rgb(131, 10, 10);
+}
+.experience{
+  background-color: rgb(213, 213, 213);
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 400px;
+    padding: 10px;
+    margin: 10px; 
+    box-shadow: 6px 6px 50px rgb(131, 10, 10);
+}
+#portfolio {
+    background-color: rgb(213, 213, 213);
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px; 
+    box-shadow: 6px 6px 50px rgb(131, 10, 10);
+}
+main {
+    margin: 20px;
+}
+/*formulaire de contact*/
+fieldset {
+    border: 1px solid  rgb(131, 10, 10);
+    border-radius: 10px;
+}
+#contacter {
+    text-align: center;
+    color: whitesmoke;
+    padding-bottom: 10px;
+    text-shadow: 3px 3px 5px rgb(170, 13, 13);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 40%;
+    border-radius: 10px;
+    background-color: rgb(223, 130, 130);
+    padding: 5px;
+    text-align: center;
+}
+input {
+    border:  1px solid  rgb(131, 10, 10);;
+    border-radius: 5px;
+}
+input:hover {
+    color: orangered;
+}
+
+textarea {
+    width: 200px;
+    height: 150px;
+    border-radius: 5px;
+    border:  1px solid rgb(131, 10, 10);
+}
+#message {
+    margin: auto;
+}
+#Envoyer {
+    border-radius: 5px;
+    background-color:rgb(131, 10, 10);
+    padding: 5px;
+    color: whitesmoke;
+}
+#Envoyer:hover {
+    color: yellow;
+}
+
+/*footer*/
+footer{
+    background-color: rgb(223, 130, 130);
+    text-align: center;
+}
+@media screen and (max-width: 960px) {
+    img {
+        display: none;
+    }
+    p {
+        overflow: auto;
+    }
+}
