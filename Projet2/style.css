@@ -39,6 +39,14 @@
     color: rgb(20, 21, 7);
     background-color:rgb(110, 198, 22) ;
 }
+.container_index{
+    z-index: 1;
+    /*pour que la navbar reste fixe au scroll*/
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
 .nav-header {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -138,6 +146,18 @@
 .carousel-control-next-icon {
     background-color: black;
 }
+/*boutton qui reste fixe sur la page qd on scroll*/
+.scroll-top {
+    background-color:  blue;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    position:fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
 
 /*navbar autres pages*/
 .header nav {
@@ -212,7 +232,7 @@ input[type="Rechercher"]:focus{
     height: 700px;
     text-align: center;
     background-size: cover;
-    background-image: url('../Projet2/images/nordseher-bridge-8111723_1280.webp');
+    background-image: url('images/nordseher-bridge-8111723_1280.webp');
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -230,7 +250,7 @@ input[type="Rechercher"]:focus{
     height: 700px;
     text-align: center;
     background-size: cover;
-    background-image: url('../Projet2/images/graphixmade-dslr-8058783_1280.webp');
+    background-image: url('images/graphixmade-dslr-8058783_1280.webp');
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -299,9 +319,9 @@ a {
 
 @keyframes defilerGauchaDroite {
   0% {
-    transform: translate(100%, 0);
+    transform: translateX(1%);
   }
   100% {
-    transform: translate(-100%, 0);
+    transform: translateX(-100%);
   }
 }
