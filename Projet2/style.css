@@ -1,0 +1,307 @@
+/*selecteur universel pour tte la page html. reinitialisation*/
+* {
+    margin: 0;
+    padding: 0;
+    /*pour gérer correctement la taille, pour page responsive*/
+    box-sizing: border-box;
+}
+
+/*header*/
+.header-index {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+ /*page index*/
+ /*button cta banniere page index*/
+.button-cta-index {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: yellow;
+    color: black;
+    text-decoration: none;
+}
+
+/*navbar page index*/
+.container_index a {
+    color: white;
+    padding: 10px;
+    
+}
+
+.container_index a:hover {
+    color: rgb(110, 198, 22);
+}
+
+.container_index a:focus {
+    color: rgb(20, 21, 7);
+    background-color:rgb(110, 198, 22) ;
+}
+.nav-header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+    padding: 30px;
+}
+
+/*bannière header page index*/
+.container_index {
+    width: 100%;
+    text-align: center;
+    font-size: x-large;
+    color: white;
+    
+}
+.banner-index{
+    height: 800px;
+    background-color: black;
+    background-image: url(images/clickerhappy-caméra-3244872_640.webp);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+#banner-index {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 800px;
+    height: 600px;
+    padding-top: 100px;
+    padding-left: 70px;
+}
+
+.banner-adress{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: end;
+}
+.voir-travail h1{
+    font-size: 80px;
+}
+
+    
+/*titre h2 de la page index*/
+#titre-containers-index {
+    text-align: center;
+    margin: 20px;
+    font-size: 50px;
+}
+
+.services {
+    background-color: yellow;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    /*display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-bottom: 100px;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    
+}
+.services img{
+    position: absolute;
+    bottom: 250px;
+
+}
+
+.div-services {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+.div-services h3 {
+    font-size: 50px;
+}
+.div-services ul{
+    font-size: 20px;
+    text-decoration: underline;
+    list-style: none;
+}
+
+/*caroussel page index*/
+.carousel-item img{
+    max-width: 40%;
+    max-height: 40%;
+    margin: 0 auto;
+}
+
+.carousel-control-prev-icon {
+    background-color: black;
+}
+.carousel-control-next-icon {
+    background-color: black;
+}
+
+/*navbar autres pages*/
+.header nav {
+    background-color: white;
+    max-width: 100%;
+    margin: 0 auto; 
+    text-align: center;
+    font-size: x-large;
+    padding: 30px;
+}
+
+header nav a {
+    color: black;
+    padding: 10px;
+}
+
+header nav a:hover {
+    color: rgb(110, 198, 22);
+}
+
+header nav a:focus {
+    color: rgb(20, 21, 7);
+    background-color:rgb(110, 198, 22) ;
+}
+
+/*input rechercher page index*/
+input[type="Rechercher"]{
+    background-color: black;
+    color: aliceblue;
+    text-align: left;
+    border-style: none;
+}
+input[type="Rechercher"]:focus{
+    outline: none;
+}
+
+/*boutton cta navbar autres pages*/
+.button-cta {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+
+/*bannière header page A Propos*/
+.banner-about {
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    background-size: cover;
+    background-image: url('images/bessi-enfants-956676_1280.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*h1 sauf page index*/
+.title {
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-size: 60px;
+    margin: 0px;
+}
+
+/*bannière header contact*/
+.img-container { 
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    background-size: cover;
+    background-image: url('../Projet2/images/nordseher-bridge-8111723_1280.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*.img-container {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}*/
+
+
+ /*banner page portfolio*/
+.img-banner-portfolio {
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    background-size: cover;
+    background-image: url('../Projet2/images/graphixmade-dslr-8058783_1280.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*div class containers pages about et contact*/
+.containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.categories {
+    background-color: rgb(240, 239, 239);
+    width: 450px;
+    height: 300px;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.categories i {
+    font-size: 50px;
+    display: block;
+}
+.containers-contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+.categories-contact {
+    background-color: rgb(240, 239, 239);
+    width: 450px;
+    height: 300px;
+    margin: 20px;
+    padding: 20px;
+}
+.containers-contact-tel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*liens toutes pages*/
+a {
+    color: black;
+}
+
+/*texte defilant bleu*/
+.texte-defilant{
+    background-color: blue;
+}
+.defilant-container {
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box; 
+}
+
+.defilant-texte { 
+    display: inline-block;
+    padding-left: 100%;
+    animation: defilerGauchaDroite 20s linear infinite;
+}
+
+@keyframes defilerGauchaDroite {
+  0% {
+    transform: translate(100%, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
