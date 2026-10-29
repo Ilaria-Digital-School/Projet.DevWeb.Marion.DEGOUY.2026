@@ -28,6 +28,9 @@
 }
 
 /*navbar page index*/
+.container_index{
+    padding: 20px;
+}
 .container_index a {
     color: white;
     padding: 10px;
@@ -42,31 +45,40 @@
     color: rgb(20, 21, 7);
     background-color:rgb(110, 198, 22) ;
 }
-.container_index{
+
+/*pour que la navbar reste fixe au scroll*/
+/*.container_index{
     z-index: 1;
-    /*pour que la navbar reste fixe au scroll*/
+    
     position: sticky;
     top: 0;
     left: 0;
     width: 100%;    
-}
+}*/
+
 .container_index ul{
     list-style: none;
 }
 
-.container-fluid.nav-header{
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    gap: 10px;
+/*burger menu page index*/
+.container-fluid.nav-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 150px;
     padding: 20px;
 }
 
-
-.nav-header {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    gap: 10px;
-    padding: 30px;
+/*input rechercher page index*/
+input[type="Rechercher"]{
+    background-color: black;
+    color: aliceblue;
+    text-align: left;
+    border-style: none;
+}
+input[type="Rechercher"]:focus{
+    outline: none;
 }
 
 /*bannière header page index*/
@@ -206,48 +218,46 @@
 
 
 /*navbar autres pages*/
-.header nav {
+/*burger menu autres pages*/
+.nav-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 150px;
+}
+.container_index_pages{
     background-color: white;
     max-width: 100%;
     margin: 0 auto; 
     text-align: center;
     font-size: x-large;
-    padding: 30px;
+    padding: 20px;
 }
 
-header nav a {
+.container_index_pages a {
     color: black;
     padding: 10px;
 }
 
-header nav a:hover {
+.container_index_pages a:hover {
     color: rgb(110, 198, 22);
 }
 
-header nav a:focus {
+.container_index_pages a:focus {
     color: rgb(20, 21, 7);
     background-color:rgb(110, 198, 22) ;
 }
 
-/*input rechercher page index*/
-input[type="Rechercher"]{
-    background-color: black;
-    color: aliceblue;
-    text-align: left;
-    border-style: none;
-}
-input[type="Rechercher"]:focus{
-    outline: none;
-}
-
 /*boutton cta navbar autres pages*/
-.button-cta {
-    display: inline-block;
+a.button-cta{
+    /*display: inline-block;*/
     padding: 10px 20px;
     background-color: black;
     color: white;
     text-decoration: none;
 }
+
 
 
 /*bannière header page A Propos*/
