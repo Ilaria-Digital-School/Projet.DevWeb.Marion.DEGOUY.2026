@@ -17,7 +17,11 @@
  /*page index*/
  /*button cta page index*/
 .button-cta-index {
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: 50px;
+    margin: 20px;
     padding: 10px 20px;
     background-color: yellow;
     color: black;
@@ -46,15 +50,6 @@
     background-color:rgb(110, 198, 22) ;
 }
 
-/*pour que la navbar reste fixe au scroll*/
-/*.container_index{
-    z-index: 1;
-    
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;    
-}*/
 
 .container_index ul{
     list-style: none;
@@ -68,6 +63,9 @@
     align-items: center;
     gap: 150px;
     padding: 20px;
+}
+#search ::placeholder{
+    text-align: center;
 }
 
 /*input rechercher page index*/
@@ -84,33 +82,44 @@ input[type="Rechercher"]:focus{
 /*bannière header page index*/
 .container_index {
     width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
     font-size: x-large;
     color: white;
     
 }
 .banner-index{
-    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
     background-color: black;
     color: white;
-    background-image: url(images/clickerhappy-caméra-3244872_640.webp);
+    background-image: url(../images/clickerhappy-caméra-3244872_640.webp);
     background-position: right;
     background-repeat: no-repeat;
 }
 #banner-index {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: wrap;
     width: 800px;
-    height: 600px;
+    height: auto;
     padding-top: 100px;
     padding-left: 70px;
 }
 
 .banner-adress{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    margin-bottom: 70px;
     justify-items: center;
-    align-items: end;
+    text-align: end;
+}
+.voir-travail{
+    display: flex;
+    flex-wrap: wrap;
 }
 .voir-travail h1{
     font-size: 80px;
@@ -124,38 +133,44 @@ input[type="Rechercher"]:focus{
     font-size: 50px;
 }
 
-.services {
+
+/*marques de la page index et formulaire contact*/
+.marques {
     background-color: yellow;
-    position: relative;
     width: 100%;
-    height: 600px;
+    height: auto;
     margin-top: 200px;
     margin-bottom: 100px;
-    /*display: flex;
+    display: flex;
     flex-wrap: wrap;
-    margin-top: 100px;
-    margin-bottom: 100px;*/
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    
+    justify-content: space-between;
+    z-index: 10;
 }
-.services img{
-    position: absolute;
-    bottom: 250px;
+.marques img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+    z-index: 1;
+    margin-top: -100px;
 
 }
 
-.div-services {
-    width: 500px;
+.div-marques {
+    width: 700px;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
     display: flex;
     flex-wrap: wrap;
     padding-top: 30px;
+    margin: 20px;
+    text-align: start;
 }
-.div-services h3 {
+.div-marques h3 {
     font-size: 50px;
 }
-.div-services ul{
+.div-marques ul{
     font-size: 20px;
     text-decoration: underline;
     list-style: none;
@@ -186,17 +201,15 @@ input[type="Rechercher"]:focus{
 .footer{
     margin: 50px;
 }
-.container{
-    padding-bottom: 30px;
-    margin-top: 30px;
-    font-size: 25px;
-}
+
 .ligne-footer{
     /*pour la ligne au dessus des reseaux*/
     border: none;
     border-top: 2px solid black;
     margin: 20px auto;
-    padding-top: 20px;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 25px;
 }
 .reseau-footer{
     display: flex;
@@ -251,7 +264,6 @@ input[type="Rechercher"]:focus{
 
 /*boutton cta navbar autres pages*/
 a.button-cta{
-    /*display: inline-block;*/
     padding: 10px 20px;
     background-color: black;
     color: white;
@@ -266,20 +278,23 @@ a.button-cta{
     height: 700px;
     text-align: center;
     background-size: cover;
-    background-image: url('images/bessi-enfants-956676_1280.webp');
+    background-image: url('../images/bessi-enfants-956676_1280.webp');
     background-position: center;
     background-repeat: no-repeat;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 /*h1 sauf page index*/
 .title {
-   position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /*transform: translate(-50%, -50%);*/
     color: white; 
     font-size: 60px;
-    margin: 0px;
+    z-index: 1;
+    
 }
 
 /*bannière header contact*/
@@ -288,17 +303,15 @@ a.button-cta{
     height: 700px;
     text-align: center;
     background-size: cover;
-    background-image: url('images/nordseher-bridge-8111723_1280.webp');
+    background-image: url('../images/nordseher-bridge-8111723_1280.webp');
     background-position: center;
     background-repeat: no-repeat;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
-
-/*.img-container {
-    width: 100%;
-    display: block;
-    object-fit: cover;
-}*/
-
 
  /*banner page portfolio*/
 .img-banner-portfolio {
@@ -306,9 +319,14 @@ a.button-cta{
     height: 700px;
     text-align: center;
     background-size: cover;
-    background-image: url('images/graphixmade-dslr-8058783_1280.webp');
+    background-image: url('../images/graphixmade-dslr-8058783_1280.webp');
     background-position: center;
     background-repeat: no-repeat;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 /*div class containers pages about et contact*/
@@ -333,9 +351,9 @@ a.button-cta{
     display: block;
 }
 .containers-contact {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .categories-contact {
     background-color: rgb(240, 239, 239);
@@ -380,4 +398,80 @@ a {
   100% {
     transform: translateX(-100%);
   }
+}
+
+/*formulaire page contact*/
+.contactForm{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin: 20px;
+}
+.contactForm div {
+    margin: 20px;
+    width: 100%;
+}
+.contactForm h2 {
+    margin: 20px;
+    width: 100%;
+    font-size: 50px;
+}
+.contactForm input{
+    background-color: yellow;
+    text-decoration: underline;
+    border-style: none;
+}
+.contactForm input:hover{
+    background-color: white;
+    border-radius: 5px;
+}
+
+.contactForm label {
+    display: block;
+}
+.contactForm textarea{
+    width: 100%;
+    background-color: yellow;
+    border-style: dashed;
+    border-radius: 5px;
+}
+.contactForm textarea:hover{
+    background-color: white;
+    border-radius: 5px;
+}
+#btn-contact {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    justify-content: center;
+}
+#btn-contact:hover{
+     color: rgb(110, 198, 22);
+}
+
+/*page admin addProducts ajout de prestations*/
+#formProduct{
+    background-color: yellow;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+#formProduct legend{
+    text-align: center;
+}
+#formProduct button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    justify-content: center;
+}
+#formProduct div{
+    margin: 10px;
 }

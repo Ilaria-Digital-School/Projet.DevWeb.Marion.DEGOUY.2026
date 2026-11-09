@@ -8,14 +8,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/CSS/style.css">
     <title>Home Page</title>
 </head>
 
 <body>
     <header class="header-index">
-        
+    
         <!-- barre de navigation -->
+    
         <div class="container_index">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid nav-header">
@@ -23,11 +24,12 @@
                         <i class="fa-regular fa-camera" aria-hidden="true"></i>
                     </div>
     
-                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                        aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-
+    
                     <div class="collapse navbar-collapse" id="navbarScroll">
                         <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
                             <li class="nav-item"><a href="index.html">Accueil</a></li>
@@ -35,39 +37,39 @@
                             <li class="nav-item"><a href="pages/contact.html">Contactez nous!</a></li>
                             <li class="nav-item"><a href="pages/portfolio.html">Portfolio</a></li>
                         </ul>
-                        <div>
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <input type="Rechercher" placeholder="Rechercher">
+                        <div id="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="Rechercher" placeholder="Rechercher">
                         </div>
                     </div>
-    
                     
                 </div>
             </nav>
         </div>
     </header>
-        
         <main>
             <section class="banner-index">
                 <div id="banner-index">
                     <div class="voir-travail">
                         <h1>Nous sommes créatifs tous les jours!</h1>
                         <p>Nous sommes une équipe de professionnels à votre services
-                            pour <br> immortaliser vos moments les plus précieux.</p>
-        
-                        <a href="pages/portfolio.html" class="button-cta-index">VOIR NOTRE TRAVAIL</a>
+                            pour immortaliser vos moments les plus précieux.</p>
+                    </div>
+                    <div class="button-cta-index">
+                        <a href="pages/portfolio.html">VOIR NOTRE TRAVAIL</a>
                     </div>
                 </div>
-                <div class="banner-adress">
-                    <div>
-                        <h2>35 rue du Soleil Levant 15700 Mauriac</h2>
-                    </div>
-                    <div>
-                        <h2>06.83.67.23.47</h2>
+                <div class="container">
+                    <div class="banner-adress row">
+                        <div class="col-12 col-md-6">
+                            <h2>35 rue du Soleil Levant 15700 Mauriac</h2>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h2>06.83.67.23.47</h2>
+                        </div>
                     </div>
                 </div>
             </section>
-        
             <section class="texte-defilant">
                 <div class="container-my">
                     <div class="defilant-container bg-primary text-white p-2 rounded">
@@ -118,25 +120,27 @@
                     </div>
                 </div>
             </section>
-            <section class="services">
-                <div class="div-services">
-                    <img src="images/image3.webp" alt="femme dans les escaliers">
+            <section class="marques">
+                <div class="div-marques">
+                    <img src="assets/images/image3.webp" alt="femme dans les escaliers">
                 </div>
-                <div class="div-services">
-                    <h3><strong>Nous vous proposons un large choix de produits de qualité</strong></h3>
-                    <p>Nous sommes des professionnels créatifs et passionnés <br>et nous travaillons avec les meilleurs marques!
-                    </p>
-                    <h4>Parce que vos souvenirs sont précieux!</h4>
-        
-                    <ul>
-                        <strong>
-                            <li>Polaroid</li>
-                            <li>Canon</li>
-                            <li>Hasselblad</li>
-                            <li>Fujifilm</li>
-                        </strong>
-                    </ul>
-        
+                <div class="div-marques">
+                    <div>
+                        <h3><strong>Nous vous proposons un large choix de produits de qualité</strong></h3>
+                        <p>Nous sommes des professionnels créatifs et passionnés <br>et nous travaillons avec les meilleurs marques!
+                        </p>
+                        <h4>Parce que vos souvenirs sont précieux!</h4>
+                    </div>
+                    <div>
+                        <ul>
+                            <strong>
+                                <li>Polaroid</li>
+                                <li>Canon</li>
+                                <li>Hasselblad</li>
+                                <li>Fujifilm</li>
+                            </strong>
+                        </ul>
+                    </div>
                 </div>
             </section>
         
@@ -155,28 +159,28 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="images/smiln32-ai-généré 8138112_640.webp" class="d-block w-100" alt="...">
+                            <img src="assets/images/smiln32-ai-généré 8138112_640.webp" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Mariage</h5>
                                 <p>Forfait Spécial Mariage pour immortaliser chaque détail</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="images/aicanvas-ai-généré-8723779_640.webp" class="d-block w-100" alt="...">
+                            <img src="assets/images/aicanvas-ai-généré-8723779_640.webp" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Anniversaire</h5>
                                 <p>Forfait à la journée: anniversaire, baptême, etc</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="images/artie112-ai-généré-9028972_640.webp" class="d-block w-100" alt="...">
+                            <img src="assets/images/artie112-ai-généré-9028972_640.webp" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Photo de classes</h5>
                                 <p>Des photos originales à proposer aux parents d'élèves de votre école!</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="images/erwinbosman-chef-10264466_640.webp" class="d-block w-100" alt="...">
+                            <img src="assets/images/erwinbosman-chef-10264466_640.webp" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Entreprise</h5>
                                 <p>La photo au service de votre savoir-faire</p>
@@ -255,6 +259,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
             crossorigin="anonymous"></script>
+        <script src="assets/JS/main.js"></script>
         </body>
         
         </html>
