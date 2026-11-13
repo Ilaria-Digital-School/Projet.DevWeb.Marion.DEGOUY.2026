@@ -11,6 +11,11 @@ if (btnScroll) {
     })
 };
 
+//pour button redirection page project.html des articles
+function rediriger() {
+    window.location.href = "project.html";
+  }
+
 
 //pour afficher automatiquement la liste des prestations, projets
 function afficherPrestations() {
@@ -30,12 +35,12 @@ console.log(container);
         nouveauProjet.classList.add("product-card"); 
         //.classlist pour acces a la liste et .add pour ajouter
 
-        listeProjects.innerHTML = `
+        nouveauProjet.innerHTML = `
         <h3 class="h3">${project.nom}</h3>
             <img src=${project.imgURL} alt="${project.nom}">
             <p>${project.description}</p>
             <p class="price">${project.prix} £</p>
-            <button type="button">Acheter</button>
+            <button type="button" onclick="rediriger()">Voir plus</button>
         `
         container.appendChild(nouveauProjet); 
         //.appendChid rajoute un noeud au dernier noeud enfant

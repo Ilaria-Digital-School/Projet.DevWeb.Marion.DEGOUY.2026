@@ -24,10 +24,10 @@ function ajouterProject(){
         let description = document.getElementById('description').value; //var2
         let prix = document.getElementById('prix').value; //var3
         let imgURL = document.getElementById('imgURL').value; //var4
-        console.log(nom, prix, description, imgURL);
+        console.log(nom, description, prix, imgURL);
 
         //2:regrouper les valeurs ds un objet
-        let prestation = new Project(nom, description, prix,  imgURL); //(var1, var2, vra3, var4)
+        let prestation = new Project(nom, description, prix, imgURL); //(var1, var2, vra3, var4)
         console.log(prestation);
 
         //3:sauvegarder ds localstorage
