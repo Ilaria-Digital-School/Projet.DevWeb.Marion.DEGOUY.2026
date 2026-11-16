@@ -6,6 +6,15 @@
     box-sizing: border-box;
 }
 
+/*police personnes dylexiques*/
+@import url('https://jsdelivr.net');
+body {
+    font-family: 'OpenDyslexic', Arial, sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+}
+
 /*header*/
 .header-index {
     background-color: black;
@@ -75,11 +84,11 @@ input[type="Rechercher"]{
     text-align: left;
     border-style: none;
 }
-input[type="Rechercher"]:focus{
-    outline: none;
-}
 
 /*bannière header page index*/
+.contact-indexBanner{
+    font-size: 30px;
+}
 .container_index {
     width: 100%;
     height: auto;
@@ -538,4 +547,13 @@ article button:hover{
 .project-container h3 {
     margin-bottom: 10px;
     font-size: 50px;   
+}
+
+/*page addproducts*/
+.addProducts-pro{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
 }
