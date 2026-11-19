@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="shortcut icon" href="../camera-regular-full.svg" type="image/x-icon">
     <link rel="stylesheet" href="../assets/CSS/style.css">
     <meta name="robots" content="contact, follow">
     <title>Contactez-nous!</title>
@@ -56,7 +57,7 @@
             <!-- containers adresse-->
             <div class="containers-contact">
                 <div class="categories-contact">
-                    <h2>Notre quartier général: </h2>
+                    <h2><strong>Notre quartier général: </strong></h2>
                     <p>35, rue du Soleil Levant<br>15700 Mauriac</p>
                     <a href="https://www.google.com/maps/@45.2157325,2.0057175,9.96z?entry=ttu&g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D"
                         target="_blank">Itineraire</a>
@@ -65,7 +66,7 @@
     
                 <!-- containers email  -->
                 <div class="categories-contact">
-                    <h2>Adresse mail: </h2>
+                    <h2><strong>Adresse mail: </strong></h2>
                     <p>exemple@gmail.com</p>
     
                     <a href="mailto:marion.pechard@gmail.com">Ecrivez nous</a>
@@ -74,7 +75,7 @@
             <!-- containers telephone  -->
             <div class="containers-contact-tel">
                 <div class="categories-contact">
-                    <h2>Téléphone</h2>
+                    <h2><strong>Téléphone: </strong></h2>
                     <p>05 89 62 37 83</p>
                     <p>06 89 75 99 41</p>
     
@@ -94,21 +95,21 @@
                             <h2>Contactez nous!</h2>
                             <div>
                                 <label for="nom">Nom: </label>
-                                <input type="text" id="nom" placeholder="Ecrivez votre nom ici" required>
+                                <input type="text" id="nom" placeholder="Ecrivez votre nom ici" autocomplete="family-name" required>
         
                                 <label for="prenom">Prénom: </label>
-                                <input type="text" id="prenom" placeholder="Ecrivez votre prénom ici" required>
+                                <input type="text" id="prenom" placeholder="Ecrivez votre prénom ici" autocomplete="name" required>
                             </div>
                             <div>
                                 <label for="email">Votre e-mail</label>
-                                <input type="email" id="email" placeholder="exemple@gmail.com" required>
+                                <input type="email" id="email" placeholder="exemple@gmail.com" autocomplete="email" required>
                             </div>
                             <div>
                                 <label for="message">Dite nous ce que l'on peut faire pour vous: </label>
                                 <textarea rows="10" id="message" placeholder="Ecrivez votre message ici!"></textarea>
                             </div>
                             <div>
-                                <button id="btn-contact" type="submit" class="button-cta">Envoyer un message</button>
+                                <button id="btn-contact" type="submit" class="button-cta" aria-label="envoyer votre message">Envoyer un message</button>
                             </div>
                         </fieldset>
                     </form>
@@ -136,8 +137,8 @@
                         <h3><em>Recevez toutes les informations dont<br> vous avez besoins
                                 directement dans votre boite mail!</em></h3>
         
-                        <input type="Email" id="Email" placeholder="Votre email ici" required>
-                        <button type="submit"><i class="fa-regular fa-circle-up"></i></button>
+                        <input type="Email" id="Email" placeholder="Votre email ici" autocomplete="email" required>
+                        <button type="submit" aria-label="envoyer mon e-mail"><i class="fa-regular fa-circle-up"></i></button>
         
                         <p>En vous inscrivant pour recevoir les e-mails, vous acceptez notre politique de <br>
                             confidentialité. Nous traitons vos informations de manière responsable.</p>
@@ -163,7 +164,7 @@
             
                     <p>0683672347</p>
             
-                    <a href="mailto:marion.pechard@gmail.com">exemple@gmail.com</a>
+                    <a href="mailto:marion.pechard@gmail.com" aria-label="e-mail">exemple@gmail.com</a>
                 </div>
             </section>
             <section class="container ligne-footer">
@@ -172,12 +173,10 @@
                         <p>Copyright <i class="fa-solid fa-copyright"></i> 2026 xxxxxxxx</p>
                     </div>
                     <div class="col-12 col-md-6 reseau-footer">
-                        <label for="instagram">Instagram: </label>
-                        <a href="https://www.instagram.com/" target="_blank">
+                        <a href="https://www.instagram.com/" target="_blank" aria-label="lien vers Instagram">
                             <i class="fa-brands fa-square-instagram"></i>
                         </a>
-                        <label for="instagram">Linkedin: </label>
-                        <a href="https://www.linkedin.com/in/marion-degouy-5b987a39a/" target="_blank" aria-label="linkedin">
+                        <a href="https://www.linkedin.com/in/marion-degouy-5b987a39a/" target="_blank" aria-label="lien vers linkedin">
                             <i class="fa-brands fa-square-linkedin"></i>
                         </a>
                     </div>
