@@ -1,0 +1,624 @@
+/*selecteur universel pour tte la page html. reinitialisation*/
+* {
+    margin: 0;
+    padding: 0;
+    /*pour gérer correctement la taille, pour page responsive*/
+    box-sizing: border-box;
+}
+
+/*police personnes dylexiques*/
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+}
+
+/*header*/
+.header-index {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+ /*page index*/
+ /*button cta page index*/
+.button-cta-index {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: 50px;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: yellow;
+    color: black;
+    text-decoration: none;
+}
+.navbar-toggler{
+    background-color: white;
+}
+
+/*navbar page index*/
+.container_index{
+    padding: 20px;
+}
+.container_index a {
+    color: white;
+    padding: 10px;
+    
+}
+
+.container_index a:hover {
+    color: rgb(110, 198, 22);
+}
+
+.container_index a:focus {
+    color: rgb(0, 0, 0);
+    background-color:rgb(110, 198, 22) ;
+}
+.container_index .active {
+    color: rgb(110, 198, 22);
+}
+
+.container_index ul{
+    list-style: none;
+}
+
+/*burger menu page index*/
+.container-fluid.nav-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 150px;
+    padding: 20px;
+}
+#search ::placeholder{
+    text-align: center;
+}
+
+/*input rechercher page index*/
+input[type="Rechercher"]{
+    background-color: black;
+    color: aliceblue;
+    text-align: left;
+    border-style: none;
+}
+
+/*bannière header page index*/
+.contact-indexBanner{
+    font-size: 30px;
+}
+.container_index {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: x-large;
+    color: white;
+    
+}
+
+.banner-index{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    color: white;
+    background-image: url(../images/clickerhappy-caméra-3244872_640.webp);
+    background-position: right;
+    background-repeat: no-repeat;
+   
+}
+#banner-index {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    height: auto;
+    max-width: 100%;
+    padding-top: 100px;
+    padding-left: 50px;
+}
+@media(max-width:600px) {
+    #banner-index{
+        padding: 20px;
+    } 
+}
+
+.banner-adress{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    justify-items: center;
+    text-align: end;
+}
+@media(max-width:600px) {
+    .banner-adress{
+        text-align: center;
+    }
+}
+.voir-travail{
+    width: auto;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.voir-travail h1{
+    font-size: 80px;
+}
+/*media queries si mobile*/
+@media(max-width:600px) {
+    .voir-travail h1{
+    font-size: 40px;
+    text-align: center;
+}
+}
+
+    
+/*titre h2 de la page index*/
+#titre-containers-index {
+    text-align: center;
+    margin: 20px;
+    font-size: 50px;
+}
+
+
+/*marques de la page index et formulaire contact*/
+.marques {
+    background-color: yellow;
+    width: 100%;
+    height: auto;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 10;
+}
+.marques img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+    z-index: 1;
+    margin-top: -100px;
+
+}
+
+.div-marques {
+    width: 650px;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    margin: 20px;
+    text-align: start;
+}
+.div-marques h3 {
+    font-size: 50px;
+}
+.div-marques ul{
+    font-size: 20px;
+    text-decoration: underline;
+    list-style: none;
+}
+
+/*caroussel page index*/
+/*titre carousel*/
+#carousel-index h3{
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+@media(max-width:600px){
+    #carousel-index h3{
+        font-size: 30px;
+    }
+}
+.carousel-item img{
+    max-width: 40%;
+    max-height: 40%;
+    margin: 0 auto;
+}
+
+.carousel-control-prev-icon {
+    background-color: black;
+}
+.carousel-control-next-icon {
+    background-color: black;
+}
+
+/*footer*/
+.footer{
+    margin: 50px;
+}
+
+.ligne-footer{
+    /*pour la ligne au dessus des reseaux*/
+    border: none;
+    border-top: 2px solid black;
+    margin: 20px auto;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 25px;
+}
+.reseau-footer{
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+/*boutton qui reste fixe sur la page qd on scroll*/
+.scroll-top {
+    background-color:  blue;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    position:fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+
+/*navbar autres pages*/
+/*burger menu autres pages*/
+.nav-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 150px;
+}
+.container_index_pages{
+    background-color: white;
+    max-width: 100%;
+    margin: 0 auto; 
+    text-align: center;
+    font-size: x-large;
+    padding: 20px;
+}
+
+.container_index_pages a {
+    color: black;
+    padding: 10px;
+}
+
+.container_index_pages .active {
+    color: rgb(110, 198, 22);
+}
+
+.container_index_pages a:hover {
+    color: rgb(110, 198, 22);
+}
+
+.container_index_pages a:focus {
+    color: rgb(20, 21, 7);
+    background-color:rgb(110, 198, 22) ;
+}
+
+/*boutton cta navbar autres pages*/
+a.button-cta{
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/*bannière header page A Propos*/
+.banner-about {
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    background-size: cover;
+    background-image: url('../images/enfants.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/*h1 sauf page index*/
+.title {
+    /*transform: translate(-50%, -50%);*/
+    color: white; 
+    font-size: 60px;
+    z-index: 1;
+    
+}
+
+/*bannière header contact*/
+.img-container { 
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    background-size: cover;
+    background-image: url('../images/nordseher-bridge-8111723_1280.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+ /*banner page portfolio*/
+.img-banner-portfolio {
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    background-size: cover;
+    background-image: url('../images/graphixmade-dslr-8058783_1280.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/*titre h2 portfolio*/
+#projets-presta{
+    text-align: center;
+    margin: 20px;
+}
+/*div class containers pages about et contact*/
+.containers {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.categories {
+    background-color: rgb(240, 239, 239);
+    width: 500px;
+    height: 350px;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@media(max-width:1024px) {
+    .categories{
+        height: auto;
+    }
+}
+.categories i {
+    font-size: 50px;
+    display: block;
+}
+.containers-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+.categories-contact {
+    background-color: rgb(240, 239, 239);
+    width: 500px;
+    height: 350px;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.containers-contact-tel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*liens toutes pages*/
+a {
+    color: black;
+}
+
+/*texte defilant bleu*/
+.texte-defilant{
+    background-color: blue;
+}
+.defilant-container {
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box; 
+}
+
+.defilant-texte { 
+    display: inline-block;
+    padding-left: 100%;
+    animation: defilerGauchaDroite 20s linear infinite;
+}
+
+@keyframes defilerGauchaDroite {
+  0% {
+    transform: translateX(1%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/*formulaire page contact*/
+.contactForm{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin: 20px;
+}
+.contactForm div {
+    margin: 20px;
+    width: 100%;
+}
+.contactForm h2 {
+    margin: 20px;
+    width: 100%;
+    font-size: 50px;
+}
+.contactForm input{
+    background-color: yellow;
+    text-decoration: underline;
+    border-style: none;
+}
+.contactForm input:hover{
+    background-color: white;
+    border-radius: 5px;
+}
+
+.contactForm label {
+    display: block;
+}
+.contactForm textarea{
+    width: 100%;
+    background-color: yellow;
+    border-style: dashed;
+    border-radius: 5px;
+}
+.contactForm textarea:hover{
+    background-color: white;
+    border-radius: 5px;
+}
+#btn-contact {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    justify-content: center;
+}
+#btn-contact:hover{
+     color: rgb(110, 198, 22);
+}
+
+/*page admin addProducts ajout de prestations*/
+#formProduct{
+    background-color: yellow;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+#formProduct legend{
+    text-align: center;
+}
+#formProduct button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    justify-content: center;
+}
+#formProduct div{
+    margin: 10px;
+}
+
+
+/*portfolio*/
+.product-card{
+    background-color: #fcfcfc;
+    border: 1px dashed grey;
+    width: 500px;
+    height: auto;
+    max-width: 100%;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+.project-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    /* padding-left: 50px;
+    padding-right: 50px; */
+    margin: 50px;
+}
+article{
+    /* justify-content: center; */
+    align-items: center;
+}
+article p{
+    padding-top: 10px;
+    font-size: 25px;
+}
+.price{
+    font-weight: bold;
+}
+
+article button {
+    width: 80%;
+    height: 40px;
+    background-color: orangered;
+    color: black;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin:  0 auto;
+    margin-bottom: 10px;
+    border: none;
+}
+article button:hover{
+    color: rgb(20, 21, 7);
+    background-color:rgb(110, 198, 22) ;
+}
+.project-container img {
+    width: 350px;
+    height: 350px;
+    max-width: 100%;
+    display: block;
+    margin:  0 auto;
+    padding: 5px;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+}
+@media(max-width: 600px){
+    .project-container img{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.project-container h3 {
+    margin-bottom: 10px;
+    font-size: 50px;   
+}
+@media(max-width: 1024px){
+    .project-container h3{
+        font-size: 30px;
+    }
+}
+
+/*page addproducts*/
+.addProducts-pro{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
