@@ -3,11 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderHome } from './components/header-home/header-home';
 import { Footer } from './components/footer/footer';
 import { Home } from './components/home/home';
+import { ScrollTopButton } from './components/scroll-top-button/scroll-top-button';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderHome, Footer, Home],
+  imports: [RouterOutlet, HeaderHome, Footer, Home, ScrollTopButton],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

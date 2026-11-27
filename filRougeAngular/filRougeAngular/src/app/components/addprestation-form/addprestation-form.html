@@ -1,0 +1,32 @@
+<section>
+
+    <!-- formulaire d'ajout des prestations -->
+    <form id="formPrestation" id="formProduct" class="form" #prestationForm="ngForm" (ngSubmit)="addPrestation(prestationForm)">
+        <legend>
+            <h2>Ajouter des prestations</h2>
+        </legend>
+
+        <fieldset>
+
+            <div>
+                <label for="nom">Nom: </label>
+                <input type="text" id="nom" [(ngModel)]="prestation.name" name="name" required>
+            </div>
+            <div>
+                <label for="description">Description: </label>
+                <textarea rows="2" id="description"  [(ngModel)]="prestation.description" name="description" placeholder="Votre description ici"></textarea>
+            </div>
+            <div>
+                <label for="prix">Prix</label>
+                <input type="number" id="prix" [(ngModel)]="prestation.price" name="price" placeholder="prix" required>
+            </div>
+            <div>
+                <label for="imgURL">imgURL:</label>
+                <input type="text" id="imgURL" [(ngModel)]="prestation.imgURL" name="imgURL" placeholder="l'image de votre prestation ici" required>
+            </div>
+        </fieldset>
+
+        <button type="submit" class="btn-signUp">Envoyer</button>
+
+    </form>
+</section>

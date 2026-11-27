@@ -1,0 +1,43 @@
+<table class="table" class="adminTable">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Prestations</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Prix</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- AFFICHAGE DU TABLEAU A PARTIR DU TS -->
+                    <!-- prestation ou elt var qui represente un prestation a chaque tour -->
+                     <!-- of permet de parcourir le tableau -->
+                      <!-- prestationsTable = tableau a parcourir -->
+                       <!-- track product.id permet a angular d'identifier chaque prestation par son id -->
+                        <!-- let i=$index permet de recuperer l'index de position de chaque element du tableau -->
+
+                    @for(prestation of prestationsTab; track prestation.id; let i=$index){
+                        <tr>
+                        <th scope="row">{{prestation._id}}</th>
+                        <td>{{prestation.name}}</td>
+                        <td>{{prestation.description}}</td>
+                        <td>{{prestation.price}}£</td>
+                        <td>
+                            <button type="button" class="btn btn-primary" (click)="display(1)">voir details</button>
+                           <button type="button" class="btn btn-secondary" (click)="goToEdit(prestation._id)">Modifier</button>
+                            <button type="button" class="btn btn-danger" (click)="deleteproduct(prestation._id)">Supprimer</button> 
+                        </td>
+                    </tr>
+
+                    } 
+
+                    <!-- seulement si le tableau en questions est vide -->
+                    <!-- @empty{
+                        <tr>
+                            <td colspan="5">aucune prestations trouvés</td>
+                        </tr>
+                    } -->
+                        
+                </tbody>
+            </table>
+

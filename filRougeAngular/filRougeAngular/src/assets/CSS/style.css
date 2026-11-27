@@ -615,10 +615,46 @@ article button:hover{
 }
 
 /*page addproducts*/
-.addProducts-pro{
+/* .addProducts-pro{
     background-color: black;
     color: white;
     text-align: center;
     margin: 20px;
     padding: 20px;
+} */
+
+
+/*pour le dashboard*/
+.adminTable{
+    margin: 10px;
+}
+.adminTable button{
+    margin: 5px;
+    
+}
+.adminTable button:hover{
+    color: rgb(20, 21, 7);
+    background-color:rgb(110, 198, 22) ;
+}
+.adminTable th{
+    border: solid 1px black;
+    text-align: center;
+    padding: 5px;
+}
+
+.adminTable td{
+    border: solid 1px black;
+    padding: 5px;
+}
+#menuDashboard{
+    background-color: yellow;
+}
+#menuDashboard a{
+    color: black;
+}
+@media(max-width:600px){
+    #menuDashboard{
+        font-size: 15px;
+        margin: 0 auto;
+    }
 }

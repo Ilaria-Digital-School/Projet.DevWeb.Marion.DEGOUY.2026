@@ -1,0 +1,27 @@
+<table class="table" class="adminTable">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">nom</th>
+            <th scope="col">email</th>
+            <th scope="col">role</th>
+            <th scope="col">action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for(user of usersTab; track user._id; let i=$index){
+        <tr>
+            <th scope="row">{{user._id}}</th>
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.role}}</td>
+            <td>
+                <!-- <button type="button" class="btn btn-primary" (click)="display(1)">voir details</button> -->
+                <button type="button" class="btn btn-secondary" (click)="goToEdit(user._id)">Modifier</button>
+                <button type="button" class="btn btn-danger" (click)="deleteproduct(user._id)">Supprimer</button>
+            </td>
+        </tr>
+
+        }
+    </tbody>
+</table>
